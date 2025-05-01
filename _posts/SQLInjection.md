@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SQL Injection: Recreating SQLMap
+permalink: /sqlinjection.html
 ---
 
 When I first began my cybersecurity training, I often fell into the trap of using pre-build tools when attempting to crack into practice boxes. I would often ultimately fall short because I didn't understand how these tools worked behind the scenes. Recently, I had the great fortune of taking a semester-long offensive security course. This class not only made me aware of own my shortcomings when it came to the fundamentals of exploits, but gave me the opportunity to build my own exploits and really understand vulnerabilites at a low level.
