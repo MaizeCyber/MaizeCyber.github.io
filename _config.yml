@@ -6,7 +6,7 @@
 name: MaizeCyber
 
 # Short bio or description (displayed in the header)
-description: Cybersecurity Student
+description: A Cybersecurity Blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/MaizeCyber/MaizeCyber.github.io/master/images/MaizeFace.jpg
@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/MaizeCyber/MaizeCyber.github.io/master
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: MaizeCyber@pm.me
+  email: contact@MaizeCyber.com
   facebook:
   flickr:
   github: MaizeCyber
