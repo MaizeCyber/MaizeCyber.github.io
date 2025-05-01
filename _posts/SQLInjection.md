@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQL Injection: Recreating SQLMap
+title: "SQL Injection: Recreating SQLMap"
 permalink: /sqlinjection.html
 ---
 
