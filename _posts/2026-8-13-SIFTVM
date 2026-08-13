@@ -1,0 +1,26 @@
+---
+layout: post
+title: "SANS SIFT Workstation Linux VM Keeps Crashing on VMware Workstation"
+---
+
+## Issue
+
+I recently encountered an issue where my SIFT Workstation Linux VM kept crashing when hosted on VMware Workstation via a Windows host. The VM would work fine for about five minutes, then the CPU would suddenly spike and the machine would freeze.
+
+## Fix
+
+The issue appeared to stem from resource utilization related to VMware Workstation running on top of Windows Hypervisor Platform instead of VMware's own hypervisor. To solve, I navigate to "Turn Windows Feature On or Off" via the search menu and uncheck the Windows Hypervisor Platform option. 
+
+I then had to go to a cmd shell with admin privileges and type:
+```
+bcdedit /set hypervisorlaunchtype off 
+```
+
+Upon restarting the Windows host, the issue no longer occured and starting up the SIFT vm. 
+
+However, during some restarts, the issue would reappear and I had to reenter the bcdedit command and restart the host. According to Gemini, this may be caused by:
+- Windows Memory Integrity: In my case this did not make a difference
+- Windows Virtual Machine Platform: This can also be disabled from the "Turn Windows Feature On or Off" menu, but also disables WSL2 which I needed.
+- Windows Fast Startup: This did not seem to make a difference.
+
+As such, these instructions may have to be repeated. If I find a consistent fix, I'll update this page.
